@@ -1,0 +1,43 @@
+main{
+    width: 100%;
+    height: auto;
+    background-color: pink;
+    padding-top: 50px;
+    padding-bottom: 50px;    
+}
+header{
+    width: 80%;
+    height: 200px;
+    background-color: red;
+    margin: 0 auto;
+}
+nav{
+    width: 30%;
+    height: 500px;
+    background-color: yellow;
+    float: left;
+}
+section::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+article{
+    width: 70%;
+    height: 500px;
+    background-color: blue;
+    float: left;
+}
+footer{
+    width: 80%;
+    background-color: brown;
+    height: auto;
+    margin: 0 auto;
+}
+
+@media (max-widht: 600px){
+    header, nav, article, footer{
+        width: 100%;
+        height: auto;
+    }
+}
